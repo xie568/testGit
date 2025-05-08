@@ -1,0 +1,61 @@
+class User {
+    // 私有字段
+    private int id;
+    private String name;
+    private String email;
+
+    // 公共构造方法
+    public User(int id, String name, String email) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+    }
+
+    // Getter方法
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    // Setter方法
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    // 其他方法
+    public void printUserInfo() {
+        System.out.println("ID: " + id + ", Name: " + name + ", Email: " + email);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // 创建User对象
+        User user = new User(1, "Alice", "alice@example.com");
+        
+        // 调用方法
+        user.printUserInfo();
+        
+        // 修改属性
+        user.setName("Bob");
+        user.setEmail("bob@example.com");
+        
+        // 再次调用方法
+        user.printUserInfo();
+    }
+}
