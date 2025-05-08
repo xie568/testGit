@@ -17,7 +17,6 @@ class User {
     }
 
     public String getName() {
-	//第一次修改
         return name;
     }
 
@@ -27,7 +26,6 @@ class User {
 
     // Setter方法
     public void setId(int id) {
-//第二次修改
         this.id = id;
     }
 
